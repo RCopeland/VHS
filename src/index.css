@@ -3,62 +3,23 @@
 @tailwind utilities;
 
 .main-layout {
-  display: grid;
-  gap: 20px;
-  margin: 25px;
   width: min(95%, 120rem);
-  margin-inline: auto;
-  grid-template-areas:
-    "header header header header header header header header header header header header"
-    "hero hero  hero hero hero hero hero hero hero hero hero hero"
-    "prev prev prev prev prev prev next next next next next next"
-    "controls controls controls controls controls controls controls controls controls controls controls controls"
-    "gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery ";
-}
-
-@media screen and (min-width: 120rem) {
-  .main-layout {
-    grid-template-areas:
-      "header header header header header header header header header header header header"
-      "prev . hero hero hero hero hero hero hero hero . next"
-      "controls controls controls controls controls controls controls controls controls controls controls controls"
-      "gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery ";
-  }
-}
-
-.main-layout > * {
-  background-color: gray;
-  min-height: 50px;
 }
 
 .main-layout__header {
-  grid-area: header;
-  height: 75px;
 }
 
 .main-layout__prev {
-  grid-area: prev;
-  height: 100px;
-  align-self: center;
 }
 
 .main-layout__next {
-  grid-area: next;
-  height: 100px;
-  align-self: center;
 }
 
 .main-layout__hero {
-  grid-area: hero;
-  height: 800px;
 }
 
 .main-layout__controls {
-  grid-area: controls;
-  height: 75px;
 }
 
 .main-layout__gallery {
-  grid-area: gallery;
-  height: 2000px;
 }
