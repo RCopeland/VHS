@@ -2,7 +2,7 @@ import { ChevronDown } from "react-feather";
 
 function Index() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex flex-wrap justify-between items-center">
       <ul className="flex gap-4 text-xl">
         <li>
           <a href="#nogo">Staff Picks</a>

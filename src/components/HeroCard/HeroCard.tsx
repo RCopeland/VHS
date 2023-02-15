@@ -1,4 +1,5 @@
 import { Triangle } from "react-feather";
+import { v4 as uuidv4 } from "uuid";
 
 function HeroCard({
   title,
@@ -30,7 +31,7 @@ function HeroCard({
       <hr />
       <ul className="flex justify-between px-8">
         {ratings.map((rating) => (
-          <li className="text-center">
+          <li key={uuidv4()} className="text-center">
             <p className="text-4xl font-bold">{rating.rating}</p>
             <p className="text-sm">{rating.name}</p>
           </li>

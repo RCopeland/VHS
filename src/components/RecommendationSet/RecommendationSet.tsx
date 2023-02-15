@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import Poster from "../Poster/Poster";
 
 function RecommendationSet({
@@ -17,7 +18,7 @@ function RecommendationSet({
 }) {
   return (
     <div>
-      <div className="flex items-center justify-start gap-4 text-lg mb-4">
+      <div className="flex flex-wrap items-center justify-start gap-4 text-lg mt-4 mb-8">
         <div className="mr-8">
           <div className="flex gap-2 items-center">
             <img alt="" src={staffPhoto} />
@@ -33,9 +34,9 @@ function RecommendationSet({
           sollicitudin tellus id pulvinar malesuada.
         </p>
       </div>
-      <ul className="flex flex-wrap justify-between mb-16">
+      <ul className="grid grid-cols-12 gap-4">
         {movies.map((movie) => (
-          <li>
+          <li key={uuidv4()} className="col-span-6 md:col-span-4 lg:col-span-3">
             <Poster
               src={movie.posterSrc}
               alt={movie.posterAlt}

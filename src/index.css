@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .main-layout {
-  width: min(95%, 120rem);
+  width: min(100%, 120rem);
 }
 
 .main-layout__header {

@@ -8,10 +8,10 @@ function SiteHeader() {
           <Logo />
         </a>
       </h1>
-      <ul role="navigation" className="flex gap-4 items-center text-xl">
-        <li className="font-bold">Meet the Staff</li>
+      <ul role="navigation" className="flex gap-16 items-center text-xl">
+        <li className="">Meet the Staff</li>
         <li>
-          Username <img alt="" src="" />
+          username <img alt="" src="" />
         </li>
       </ul>
     </header>
